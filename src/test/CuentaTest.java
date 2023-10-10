@@ -45,5 +45,15 @@ class CuentaTest {
 		assertEquals(-500,ctaPruebas.getSaldo());
 		
 	}
+	
+	void testMovimiento() {
+		
+		
+	}
+	
+	void test0014() {
+		
+		
+	}
 
 }
