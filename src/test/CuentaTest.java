@@ -13,10 +13,14 @@ import pkg.Cuenta;
 class CuentaTest {
 	
 	static Cuenta ctaPruebas;
+	static Cuenta 12345;
+	static Cuenta 67890;
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
 		ctaPruebas = new Cuenta(0);
+		12345 = new Cuenta(50);
+		67890 = new Cuenta(0);
 	}
 
 	@AfterAll
@@ -47,8 +51,8 @@ class CuentaTest {
 	}
 	
 	void testMovimiento() {
-		
-		
+		assertEquals(50,12345.getSaldo());
+		assertEquals(0,67890.getSaldo());
 	}
 	
 	void test0014() {
