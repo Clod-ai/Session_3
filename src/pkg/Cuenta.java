@@ -26,5 +26,11 @@ public class Cuenta {
 		this.setSaldo(this.getSaldo()-i);
 		
 	}
+	
+	public static void Movimiento() {
+		for (String key : movimientos.keySet()){
+			 System.out.println(key + "=> " + movimientos.get(key).toString());
+		}
+	}
 
 }
