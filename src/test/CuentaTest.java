@@ -38,14 +38,18 @@ class CuentaTest {
 
 	@Test
 	void testIngresar() {
-		ctaPruebas.Ingresar(3000);
+		ctaPruebas.Ingresar(3000, ctaPruebas.toString());
+		C_12345.Ingresar(500, C_12345.toString());
+		C_12345.Ingresar(200, C_12345.toString());
 		assertEquals(3000,ctaPruebas.getSaldo());
 		
 	}
 	
 	@Test
 	void testRetirar() {
-		ctaPruebas.Retirar(500);
+		ctaPruebas.Retirar(500, ctaPruebas.toString());
+		C_12345.Retirar(150, C_12345.toString());
+		C_12345.Retirar(300, C_12345.toString());
 		assertEquals(-500,ctaPruebas.getSaldo());
 		
 	}
